@@ -74,13 +74,23 @@ NSString * const passwordErrorMessage =    @"手势密码错误";
 
 /// 显示view(此方法是加载在window上 ,遮住导航条)
 - (void)showView {
-    UIWindow * window = [[[UIApplication sharedApplication] delegate] window];
-    [window addSubview:self];
+    
+    [UIView animateWithDuration:0.25 animations:^{
+        UIWindow * window = [[[UIApplication sharedApplication] delegate] window];
+        [window addSubview:self];
+        
+    } completion:^(BOOL finished) {
+        //
+        self.alpha = 1.0;
+    }];
+    
+    
 }
 
 #pragma mark - 布局UI
 /// 根据验证类型布局UI
 - (void)layoutUI:(SCLoginVerifyType)verifyType {
+    self.alpha = 0.5;
     self.backgroundColor = [UIColor whiteColor];
     // 顶部的头像和底部的切换登录方式按钮，是共有的
     // 头像
@@ -166,7 +176,7 @@ NSString * const passwordErrorMessage =    @"手势密码错误";
         _gestureView = [[MYZGestureView alloc] initWithFrame:CGRectMake(gestureViewX, gestureViewY, GestureWH, GestureWH)];
     }
     //是否显示指示手势划过的方向箭头, 在初始设置手势密码的时候才显示, 其他的不用显示
-    _gestureView.showArrowDirection = [SCSecureHelper gestureShowStatus];
+    _gestureView.hideGesturePath = ![SCSecureHelper gestureShowStatus];
     [self addSubview:_gestureView];
     
     kWeakSelf
