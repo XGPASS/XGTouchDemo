@@ -113,7 +113,7 @@
     if (controller) {
         [self.navigationController pushViewController:controller animated:YES];
     } else {
-        SCLoginVerifyView *verifyView = [[SCLoginVerifyView alloc] initWithFrame:self.view.bounds verifyType:type];
+        SCLoginVerifyView *verifyView = [[SCLoginVerifyView alloc] initWithFrame:CGRectMake(0.0, 0.0, ScreenWidth, ScreenHeight) verifyType:type];
         [verifyView showView];
     }
 }
