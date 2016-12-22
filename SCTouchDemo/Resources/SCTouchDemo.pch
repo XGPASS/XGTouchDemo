@@ -1,0 +1,16 @@
+//
+//  SCTouchDemo.pch
+//  SCTouchDemo
+//
+//  Created by 小广 on 2016/12/19.
+//  Copyright © 2016年 小广. All rights reserved.
+//
+
+#ifndef SCTouchDemo_pch
+#define SCTouchDemo_pch
+
+#import "SCHeader.h"
+#import "SVProgressHUD.h"
+#import "UIView+Ext.h"
+
+#endif /* SCTouchDemo_pch */

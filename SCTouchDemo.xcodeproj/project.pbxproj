@@ -1,0 +1,797 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		370750B81E0B7753009088B2 /* CALayer+shake.m in Sources */ = {isa = PBXBuildFile; fileRef = 370750AE1E0B7753009088B2 /* CALayer+shake.m */; };
+		370750B91E0B7753009088B2 /* UIView+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = 370750B01E0B7753009088B2 /* UIView+Ext.m */; };
+		370750C31E0B786E009088B2 /* SCLoginVerifyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 370750C21E0B786E009088B2 /* SCLoginVerifyView.m */; };
+		370750C51E0B83E6009088B2 /* head_Img.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 370750C41E0B83E6009088B2 /* head_Img.JPG */; };
+		370750C71E0BABBF009088B2 /* fingerprint.png in Resources */ = {isa = PBXBuildFile; fileRef = 370750C61E0BABBF009088B2 /* fingerprint.png */; };
+		3728A12D1E0770DE002A803F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3728A1241E0770DE002A803F /* Assets.xcassets */; };
+		3728A12E1E0770DE002A803F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3728A1251E0770DE002A803F /* LaunchScreen.storyboard */; };
+		3728A12F1E0770DE002A803F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3728A1271E0770DE002A803F /* Main.storyboard */; };
+		3728A1301E0770DE002A803F /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3728A12B1E0770DE002A803F /* Info.plist */; };
+		3728A1311E0770DE002A803F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3728A12C1E0770DE002A803F /* main.m */; };
+		3728A13D1E077663002A803F /* SCTouchIDController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3728A13B1E077663002A803F /* SCTouchIDController.m */; };
+		3728A13E1E077663002A803F /* SCTouchIDController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3728A13C1E077663002A803F /* SCTouchIDController.xib */; };
+		3728A1421E07768A002A803F /* SCGestureController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3728A1401E07768A002A803F /* SCGestureController.m */; };
+		3728A1431E07768A002A803F /* SCGestureController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3728A1411E07768A002A803F /* SCGestureController.xib */; };
+		3728A1471E077CC5002A803F /* SCSwitchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3728A1451E077CC5002A803F /* SCSwitchCell.m */; };
+		3728A1481E077CC5002A803F /* SCSwitchCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3728A1461E077CC5002A803F /* SCSwitchCell.xib */; };
+		3728A14E1E078746002A803F /* SCMainCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3728A14C1E078746002A803F /* SCMainCell.m */; };
+		3728A14F1E078746002A803F /* SCMainCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3728A14D1E078746002A803F /* SCMainCell.xib */; };
+		3774040F1E0280A5000AEACE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3774040E1E0280A5000AEACE /* AppDelegate.m */; };
+		377404121E0280A5000AEACE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 377404111E0280A5000AEACE /* ViewController.m */; };
+		377404251E0280A5000AEACE /* SCTouchDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 377404241E0280A5000AEACE /* SCTouchDemoTests.m */; };
+		377404301E0280A5000AEACE /* SCTouchDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3774042F1E0280A5000AEACE /* SCTouchDemoUITests.m */; };
+		3774043F1E028101000AEACE /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3774043E1E028101000AEACE /* LocalAuthentication.framework */; };
+		377760A11E0A535100D2FA5D /* SCSecureHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 377760A01E0A535100D2FA5D /* SCSecureHelper.m */; };
+		37B69D6A1E09129D00BA19E3 /* SCNormalCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 37B69D681E09129D00BA19E3 /* SCNormalCell.m */; };
+		37B69D6B1E09129D00BA19E3 /* SCNormalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37B69D691E09129D00BA19E3 /* SCNormalCell.xib */; };
+		37B69D771E091DBE00BA19E3 /* MYZCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 37B69D711E091DBE00BA19E3 /* MYZCircleView.m */; };
+		37B69D781E091DBE00BA19E3 /* MYZGestureShapeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 37B69D731E091DBE00BA19E3 /* MYZGestureShapeView.m */; };
+		37B69D791E091DBE00BA19E3 /* MYZGestureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 37B69D751E091DBE00BA19E3 /* MYZGestureView.m */; };
+		37B69D7D1E091FFA00BA19E3 /* SCGestureSetController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37B69D7C1E091FFA00BA19E3 /* SCGestureSetController.m */; };
+		45FB8C1D6E355C17E6206EAC /* libPods-SCTouchDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DBDDC0033CF69B8871E21E59 /* libPods-SCTouchDemo.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		377404211E0280A5000AEACE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 377403FF1E0280A5000AEACE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 377404061E0280A5000AEACE;
+			remoteInfo = SCTouchDemo;
+		};
+		3774042C1E0280A5000AEACE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 377403FF1E0280A5000AEACE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 377404061E0280A5000AEACE;
+			remoteInfo = SCTouchDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		370750AD1E0B7753009088B2 /* CALayer+shake.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+shake.h"; sourceTree = "<group>"; };
+		370750AE1E0B7753009088B2 /* CALayer+shake.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+shake.m"; sourceTree = "<group>"; };
+		370750AF1E0B7753009088B2 /* UIView+Ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Ext.h"; sourceTree = "<group>"; };
+		370750B01E0B7753009088B2 /* UIView+Ext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Ext.m"; sourceTree = "<group>"; };
+		370750C11E0B786E009088B2 /* SCLoginVerifyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCLoginVerifyView.h; sourceTree = "<group>"; };
+		370750C21E0B786E009088B2 /* SCLoginVerifyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCLoginVerifyView.m; sourceTree = "<group>"; };
+		370750C41E0B83E6009088B2 /* head_Img.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = head_Img.JPG; sourceTree = "<group>"; };
+		370750C61E0BABBF009088B2 /* fingerprint.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fingerprint.png; sourceTree = "<group>"; };
+		3728A1241E0770DE002A803F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3728A1261E0770DE002A803F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3728A1281E0770DE002A803F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3728A12B1E0770DE002A803F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3728A12C1E0770DE002A803F /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3728A13A1E077663002A803F /* SCTouchIDController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCTouchIDController.h; sourceTree = "<group>"; };
+		3728A13B1E077663002A803F /* SCTouchIDController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCTouchIDController.m; sourceTree = "<group>"; };
+		3728A13C1E077663002A803F /* SCTouchIDController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SCTouchIDController.xib; sourceTree = "<group>"; };
+		3728A13F1E07768A002A803F /* SCGestureController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCGestureController.h; sourceTree = "<group>"; };
+		3728A1401E07768A002A803F /* SCGestureController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCGestureController.m; sourceTree = "<group>"; };
+		3728A1411E07768A002A803F /* SCGestureController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SCGestureController.xib; sourceTree = "<group>"; };
+		3728A1441E077CC5002A803F /* SCSwitchCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCSwitchCell.h; sourceTree = "<group>"; };
+		3728A1451E077CC5002A803F /* SCSwitchCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCSwitchCell.m; sourceTree = "<group>"; };
+		3728A1461E077CC5002A803F /* SCSwitchCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SCSwitchCell.xib; sourceTree = "<group>"; };
+		3728A1491E077E8E002A803F /* SCHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCHeader.h; sourceTree = "<group>"; };
+		3728A14A1E0780D7002A803F /* SCTouchDemo.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCTouchDemo.pch; sourceTree = "<group>"; };
+		3728A14B1E078746002A803F /* SCMainCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCMainCell.h; sourceTree = "<group>"; };
+		3728A14C1E078746002A803F /* SCMainCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCMainCell.m; sourceTree = "<group>"; };
+		3728A14D1E078746002A803F /* SCMainCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SCMainCell.xib; sourceTree = "<group>"; };
+		377404071E0280A5000AEACE /* SCTouchDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SCTouchDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3774040D1E0280A5000AEACE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3774040E1E0280A5000AEACE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		377404101E0280A5000AEACE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		377404111E0280A5000AEACE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		377404201E0280A5000AEACE /* SCTouchDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SCTouchDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		377404241E0280A5000AEACE /* SCTouchDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCTouchDemoTests.m; sourceTree = "<group>"; };
+		377404261E0280A5000AEACE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3774042B1E0280A5000AEACE /* SCTouchDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SCTouchDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3774042F1E0280A5000AEACE /* SCTouchDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCTouchDemoUITests.m; sourceTree = "<group>"; };
+		377404311E0280A5000AEACE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3774043E1E028101000AEACE /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
+		3777609F1E0A535100D2FA5D /* SCSecureHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCSecureHelper.h; sourceTree = "<group>"; };
+		377760A01E0A535100D2FA5D /* SCSecureHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCSecureHelper.m; sourceTree = "<group>"; };
+		37B69D671E09129D00BA19E3 /* SCNormalCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCNormalCell.h; sourceTree = "<group>"; };
+		37B69D681E09129D00BA19E3 /* SCNormalCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCNormalCell.m; sourceTree = "<group>"; };
+		37B69D691E09129D00BA19E3 /* SCNormalCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SCNormalCell.xib; sourceTree = "<group>"; };
+		37B69D701E091DBE00BA19E3 /* MYZCircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYZCircleView.h; sourceTree = "<group>"; };
+		37B69D711E091DBE00BA19E3 /* MYZCircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYZCircleView.m; sourceTree = "<group>"; };
+		37B69D721E091DBE00BA19E3 /* MYZGestureShapeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYZGestureShapeView.h; sourceTree = "<group>"; };
+		37B69D731E091DBE00BA19E3 /* MYZGestureShapeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYZGestureShapeView.m; sourceTree = "<group>"; };
+		37B69D741E091DBE00BA19E3 /* MYZGestureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYZGestureView.h; sourceTree = "<group>"; };
+		37B69D751E091DBE00BA19E3 /* MYZGestureView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYZGestureView.m; sourceTree = "<group>"; };
+		37B69D7B1E091FFA00BA19E3 /* SCGestureSetController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCGestureSetController.h; sourceTree = "<group>"; };
+		37B69D7C1E091FFA00BA19E3 /* SCGestureSetController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCGestureSetController.m; sourceTree = "<group>"; };
+		814B532A1C66DBFAA788F671 /* Pods-SCTouchDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SCTouchDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SCTouchDemo/Pods-SCTouchDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		C6279BDEC8F7AD3E12718C4D /* Pods-SCTouchDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SCTouchDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-SCTouchDemo/Pods-SCTouchDemo.release.xcconfig"; sourceTree = "<group>"; };
+		DBDDC0033CF69B8871E21E59 /* libPods-SCTouchDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SCTouchDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		377404041E0280A5000AEACE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3774043F1E028101000AEACE /* LocalAuthentication.framework in Frameworks */,
+				45FB8C1D6E355C17E6206EAC /* libPods-SCTouchDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3774041D1E0280A5000AEACE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		377404281E0280A5000AEACE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		370750AC1E0B7753009088B2 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				370750AD1E0B7753009088B2 /* CALayer+shake.h */,
+				370750AE1E0B7753009088B2 /* CALayer+shake.m */,
+				370750AF1E0B7753009088B2 /* UIView+Ext.h */,
+				370750B01E0B7753009088B2 /* UIView+Ext.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		370750BD1E0B7768009088B2 /* GestureTouchID */ = {
+			isa = PBXGroup;
+			children = (
+				370750C61E0BABBF009088B2 /* fingerprint.png */,
+				370750C41E0B83E6009088B2 /* head_Img.JPG */,
+				370750C11E0B786E009088B2 /* SCLoginVerifyView.h */,
+				370750C21E0B786E009088B2 /* SCLoginVerifyView.m */,
+			);
+			path = GestureTouchID;
+			sourceTree = "<group>";
+		};
+		3728A1231E0770DE002A803F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3728A1241E0770DE002A803F /* Assets.xcassets */,
+				3728A1251E0770DE002A803F /* LaunchScreen.storyboard */,
+				3728A1271E0770DE002A803F /* Main.storyboard */,
+				3728A1291E0770DE002A803F /* GestureLock */,
+				3728A12B1E0770DE002A803F /* Info.plist */,
+				3728A12C1E0770DE002A803F /* main.m */,
+				3728A1491E077E8E002A803F /* SCHeader.h */,
+				3728A14A1E0780D7002A803F /* SCTouchDemo.pch */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3728A1291E0770DE002A803F /* GestureLock */ = {
+			isa = PBXGroup;
+			children = (
+				3728A12A1E0770DE002A803F /* GesturePass */,
+			);
+			path = GestureLock;
+			sourceTree = "<group>";
+		};
+		3728A12A1E0770DE002A803F /* GesturePass */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = GesturePass;
+			sourceTree = "<group>";
+		};
+		3728A1321E07713C002A803F /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				3777609F1E0A535100D2FA5D /* SCSecureHelper.h */,
+				377760A01E0A535100D2FA5D /* SCSecureHelper.m */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		3728A1331E07713D002A803F /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3728A13A1E077663002A803F /* SCTouchIDController.h */,
+				3728A13B1E077663002A803F /* SCTouchIDController.m */,
+				3728A13C1E077663002A803F /* SCTouchIDController.xib */,
+				3728A13F1E07768A002A803F /* SCGestureController.h */,
+				3728A1401E07768A002A803F /* SCGestureController.m */,
+				3728A1411E07768A002A803F /* SCGestureController.xib */,
+				37B69D7B1E091FFA00BA19E3 /* SCGestureSetController.h */,
+				37B69D7C1E091FFA00BA19E3 /* SCGestureSetController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		3728A1341E07713D002A803F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3728A1441E077CC5002A803F /* SCSwitchCell.h */,
+				3728A1451E077CC5002A803F /* SCSwitchCell.m */,
+				3728A1461E077CC5002A803F /* SCSwitchCell.xib */,
+				3728A14B1E078746002A803F /* SCMainCell.h */,
+				3728A14C1E078746002A803F /* SCMainCell.m */,
+				3728A14D1E078746002A803F /* SCMainCell.xib */,
+				37B69D671E09129D00BA19E3 /* SCNormalCell.h */,
+				37B69D681E09129D00BA19E3 /* SCNormalCell.m */,
+				37B69D691E09129D00BA19E3 /* SCNormalCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		377403FE1E0280A5000AEACE = {
+			isa = PBXGroup;
+			children = (
+				377404091E0280A5000AEACE /* SCTouchDemo */,
+				377404231E0280A5000AEACE /* SCTouchDemoTests */,
+				3774042E1E0280A5000AEACE /* SCTouchDemoUITests */,
+				377404081E0280A5000AEACE /* Products */,
+				3774043D1E028101000AEACE /* Frameworks */,
+				FC8FD60EB3B473DCF061BDFE /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		377404081E0280A5000AEACE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				377404071E0280A5000AEACE /* SCTouchDemo.app */,
+				377404201E0280A5000AEACE /* SCTouchDemoTests.xctest */,
+				3774042B1E0280A5000AEACE /* SCTouchDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		377404091E0280A5000AEACE /* SCTouchDemo */ = {
+			isa = PBXGroup;
+			children = (
+				3774040D1E0280A5000AEACE /* AppDelegate.h */,
+				3774040E1E0280A5000AEACE /* AppDelegate.m */,
+				377404101E0280A5000AEACE /* ViewController.h */,
+				377404111E0280A5000AEACE /* ViewController.m */,
+				370750BD1E0B7768009088B2 /* GestureTouchID */,
+				370750AC1E0B7753009088B2 /* Category */,
+				37B69D6D1E091DBE00BA19E3 /* GestureView */,
+				3728A1321E07713C002A803F /* Helper */,
+				3728A1331E07713D002A803F /* ViewControllers */,
+				3728A1341E07713D002A803F /* Views */,
+				3728A1231E0770DE002A803F /* Resources */,
+			);
+			path = SCTouchDemo;
+			sourceTree = "<group>";
+		};
+		377404231E0280A5000AEACE /* SCTouchDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				377404241E0280A5000AEACE /* SCTouchDemoTests.m */,
+				377404261E0280A5000AEACE /* Info.plist */,
+			);
+			path = SCTouchDemoTests;
+			sourceTree = "<group>";
+		};
+		3774042E1E0280A5000AEACE /* SCTouchDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3774042F1E0280A5000AEACE /* SCTouchDemoUITests.m */,
+				377404311E0280A5000AEACE /* Info.plist */,
+			);
+			path = SCTouchDemoUITests;
+			sourceTree = "<group>";
+		};
+		3774043D1E028101000AEACE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3774043E1E028101000AEACE /* LocalAuthentication.framework */,
+				DBDDC0033CF69B8871E21E59 /* libPods-SCTouchDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		37B69D6D1E091DBE00BA19E3 /* GestureView */ = {
+			isa = PBXGroup;
+			children = (
+				37B69D701E091DBE00BA19E3 /* MYZCircleView.h */,
+				37B69D711E091DBE00BA19E3 /* MYZCircleView.m */,
+				37B69D721E091DBE00BA19E3 /* MYZGestureShapeView.h */,
+				37B69D731E091DBE00BA19E3 /* MYZGestureShapeView.m */,
+				37B69D741E091DBE00BA19E3 /* MYZGestureView.h */,
+				37B69D751E091DBE00BA19E3 /* MYZGestureView.m */,
+			);
+			path = GestureView;
+			sourceTree = "<group>";
+		};
+		FC8FD60EB3B473DCF061BDFE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				814B532A1C66DBFAA788F671 /* Pods-SCTouchDemo.debug.xcconfig */,
+				C6279BDEC8F7AD3E12718C4D /* Pods-SCTouchDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		377404061E0280A5000AEACE /* SCTouchDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 377404341E0280A5000AEACE /* Build configuration list for PBXNativeTarget "SCTouchDemo" */;
+			buildPhases = (
+				B914C3658413663425F20A33 /* [CP] Check Pods Manifest.lock */,
+				377404031E0280A5000AEACE /* Sources */,
+				377404041E0280A5000AEACE /* Frameworks */,
+				377404051E0280A5000AEACE /* Resources */,
+				82BDFD1F664A572A6E743939 /* [CP] Embed Pods Frameworks */,
+				23D30D1D5FAC2D4E1560ED1B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SCTouchDemo;
+			productName = SCTouchDemo;
+			productReference = 377404071E0280A5000AEACE /* SCTouchDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3774041F1E0280A5000AEACE /* SCTouchDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 377404371E0280A5000AEACE /* Build configuration list for PBXNativeTarget "SCTouchDemoTests" */;
+			buildPhases = (
+				3774041C1E0280A5000AEACE /* Sources */,
+				3774041D1E0280A5000AEACE /* Frameworks */,
+				3774041E1E0280A5000AEACE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				377404221E0280A5000AEACE /* PBXTargetDependency */,
+			);
+			name = SCTouchDemoTests;
+			productName = SCTouchDemoTests;
+			productReference = 377404201E0280A5000AEACE /* SCTouchDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3774042A1E0280A5000AEACE /* SCTouchDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3774043A1E0280A5000AEACE /* Build configuration list for PBXNativeTarget "SCTouchDemoUITests" */;
+			buildPhases = (
+				377404271E0280A5000AEACE /* Sources */,
+				377404281E0280A5000AEACE /* Frameworks */,
+				377404291E0280A5000AEACE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3774042D1E0280A5000AEACE /* PBXTargetDependency */,
+			);
+			name = SCTouchDemoUITests;
+			productName = SCTouchDemoUITests;
+			productReference = 3774042B1E0280A5000AEACE /* SCTouchDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		377403FF1E0280A5000AEACE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "小广";
+				TargetAttributes = {
+					377404061E0280A5000AEACE = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = D38XPC8URL;
+						ProvisioningStyle = Manual;
+					};
+					3774041F1E0280A5000AEACE = {
+						CreatedOnToolsVersion = 8.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 377404061E0280A5000AEACE;
+					};
+					3774042A1E0280A5000AEACE = {
+						CreatedOnToolsVersion = 8.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 377404061E0280A5000AEACE;
+					};
+				};
+			};
+			buildConfigurationList = 377404021E0280A5000AEACE /* Build configuration list for PBXProject "SCTouchDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 377403FE1E0280A5000AEACE;
+			productRefGroup = 377404081E0280A5000AEACE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				377404061E0280A5000AEACE /* SCTouchDemo */,
+				3774041F1E0280A5000AEACE /* SCTouchDemoTests */,
+				3774042A1E0280A5000AEACE /* SCTouchDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		377404051E0280A5000AEACE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37B69D6B1E09129D00BA19E3 /* SCNormalCell.xib in Resources */,
+				3728A1301E0770DE002A803F /* Info.plist in Resources */,
+				3728A1481E077CC5002A803F /* SCSwitchCell.xib in Resources */,
+				3728A14F1E078746002A803F /* SCMainCell.xib in Resources */,
+				3728A12F1E0770DE002A803F /* Main.storyboard in Resources */,
+				3728A13E1E077663002A803F /* SCTouchIDController.xib in Resources */,
+				3728A12D1E0770DE002A803F /* Assets.xcassets in Resources */,
+				3728A12E1E0770DE002A803F /* LaunchScreen.storyboard in Resources */,
+				3728A1431E07768A002A803F /* SCGestureController.xib in Resources */,
+				370750C71E0BABBF009088B2 /* fingerprint.png in Resources */,
+				370750C51E0B83E6009088B2 /* head_Img.JPG in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3774041E1E0280A5000AEACE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		377404291E0280A5000AEACE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		23D30D1D5FAC2D4E1560ED1B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SCTouchDemo/Pods-SCTouchDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		82BDFD1F664A572A6E743939 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SCTouchDemo/Pods-SCTouchDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B914C3658413663425F20A33 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		377404031E0280A5000AEACE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37B69D6A1E09129D00BA19E3 /* SCNormalCell.m in Sources */,
+				377404121E0280A5000AEACE /* ViewController.m in Sources */,
+				370750C31E0B786E009088B2 /* SCLoginVerifyView.m in Sources */,
+				3728A13D1E077663002A803F /* SCTouchIDController.m in Sources */,
+				37B69D781E091DBE00BA19E3 /* MYZGestureShapeView.m in Sources */,
+				370750B81E0B7753009088B2 /* CALayer+shake.m in Sources */,
+				37B69D791E091DBE00BA19E3 /* MYZGestureView.m in Sources */,
+				37B69D7D1E091FFA00BA19E3 /* SCGestureSetController.m in Sources */,
+				3728A1311E0770DE002A803F /* main.m in Sources */,
+				3728A1471E077CC5002A803F /* SCSwitchCell.m in Sources */,
+				377760A11E0A535100D2FA5D /* SCSecureHelper.m in Sources */,
+				3728A14E1E078746002A803F /* SCMainCell.m in Sources */,
+				370750B91E0B7753009088B2 /* UIView+Ext.m in Sources */,
+				37B69D771E091DBE00BA19E3 /* MYZCircleView.m in Sources */,
+				3728A1421E07768A002A803F /* SCGestureController.m in Sources */,
+				3774040F1E0280A5000AEACE /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3774041C1E0280A5000AEACE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				377404251E0280A5000AEACE /* SCTouchDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		377404271E0280A5000AEACE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				377404301E0280A5000AEACE /* SCTouchDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		377404221E0280A5000AEACE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 377404061E0280A5000AEACE /* SCTouchDemo */;
+			targetProxy = 377404211E0280A5000AEACE /* PBXContainerItemProxy */;
+		};
+		3774042D1E0280A5000AEACE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 377404061E0280A5000AEACE /* SCTouchDemo */;
+			targetProxy = 3774042C1E0280A5000AEACE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3728A1251E0770DE002A803F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3728A1261E0770DE002A803F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		3728A1271E0770DE002A803F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3728A1281E0770DE002A803F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		377404321E0280A5000AEACE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		377404331E0280A5000AEACE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		377404351E0280A5000AEACE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 814B532A1C66DBFAA788F671 /* Pods-SCTouchDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = D38XPC8URL;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/SCTouchDemo/Resources/SCTouchDemo.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/SCTouchDemo/Resources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.uama.DreamHouseServerForDLEnterprise;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "f07af5af-5f08-4c8f-b80f-c5a04e41d92d";
+				PROVISIONING_PROFILE_SPECIFIER = "DreamHouseServerForDL-dev";
+			};
+			name = Debug;
+		};
+		377404361E0280A5000AEACE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6279BDEC8F7AD3E12718C4D /* Pods-SCTouchDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/SCTouchDemo/Resources/SCTouchDemo.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/SCTouchDemo/Resources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.uama.DreamHouseServerForDLEnterprise;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		377404381E0280A5000AEACE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SCTouchDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = XG.SCTouchDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SCTouchDemo.app/SCTouchDemo";
+			};
+			name = Debug;
+		};
+		377404391E0280A5000AEACE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SCTouchDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = XG.SCTouchDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SCTouchDemo.app/SCTouchDemo";
+			};
+			name = Release;
+		};
+		3774043B1E0280A5000AEACE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SCTouchDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = XG.SCTouchDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SCTouchDemo;
+			};
+			name = Debug;
+		};
+		3774043C1E0280A5000AEACE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SCTouchDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = XG.SCTouchDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SCTouchDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		377404021E0280A5000AEACE /* Build configuration list for PBXProject "SCTouchDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				377404321E0280A5000AEACE /* Debug */,
+				377404331E0280A5000AEACE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		377404341E0280A5000AEACE /* Build configuration list for PBXNativeTarget "SCTouchDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				377404351E0280A5000AEACE /* Debug */,
+				377404361E0280A5000AEACE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		377404371E0280A5000AEACE /* Build configuration list for PBXNativeTarget "SCTouchDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				377404381E0280A5000AEACE /* Debug */,
+				377404391E0280A5000AEACE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3774043A1E0280A5000AEACE /* Build configuration list for PBXNativeTarget "SCTouchDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3774043B1E0280A5000AEACE /* Debug */,
+				3774043C1E0280A5000AEACE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 377403FF1E0280A5000AEACE /* Project object */;
+}
