@@ -22,7 +22,7 @@
 #define ScreenBounds [UIScreen mainScreen].bounds
 #define ScreenWidth  ScreenBounds.size.width
 #define ScreenHeight ScreenBounds.size.height
-#define ViewHeight   CGRectGetHeight(ScreenBounds) - 44.0 - 20.0 // 去掉导航条的高度
+#define SCViewHeight   CGRectGetHeight(ScreenBounds) - 44.0 - 20.0 // 去掉导航条的高度
 
 /// 根据16位RBG值转换成颜色，格式:UIColorFrom16RGB(0xFF0000)
 #define UIColorFrom16RGB(rgbValue,alp) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:alp]

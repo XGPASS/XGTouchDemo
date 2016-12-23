@@ -24,6 +24,7 @@ NSString * const promptPasswordErrorMessage =    @"手势密码错误";
 #define MarginTop   25.0
 #define Margin      8.0
 #define ShapeWH     40.0
+#define BottomHeight  44.0
 
 @interface SCGestureSetController ()
 
@@ -32,6 +33,8 @@ NSString * const promptPasswordErrorMessage =    @"手势密码错误";
 /// 手势九宫格
 @property (nonatomic, strong) MYZGestureView * gestureView;
 @property (nonatomic, strong) UILabel * messageLabel;
+/// 底部的验证登录密码按钮
+@property (nonatomic, strong) UIButton * bottomButton;
 @property (nonatomic, copy) NSString *  firstGestureCode;
 @property (nonatomic, copy) SCGestureSetBlock block;
 
@@ -64,6 +67,9 @@ NSString * const promptPasswordErrorMessage =    @"手势密码错误";
     self.view.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:self.shapeView];
     [self.view addSubview:self.messageLabel];
+    [self.view addSubview:self.bottomButton];
+    // 底部按钮，只有修改/删除type显示
+    self.bottomButton.hidden = self.gestureSetType != SCGestureSetTypeSetting ? NO : YES;
     if (self.gestureSetType != SCGestureSetTypeSetting) {
         if ([self.shapeView superview]) {
             [self.shapeView removeFromSuperview];
@@ -72,6 +78,7 @@ NSString * const promptPasswordErrorMessage =    @"手势密码错误";
         self.messageLabel.text = promptChangeGestureMessage;
     }
     [self setupGestureView];
+    
 }
 
 - (void)setupNav {
@@ -113,6 +120,7 @@ NSString * const promptPasswordErrorMessage =    @"手势密码错误";
     if (![self.shapeView superview]) {
         [self.view addSubview:self.shapeView];
     }
+    self.bottomButton.hidden = YES;
     self.messageLabel.top = MarginTop + ShapeWH + Margin;
     self.messageLabel.text = promptDefaultMessage;
     self.messageLabel.textColor = [UIColor blackColor];
@@ -150,6 +158,21 @@ NSString * const promptPasswordErrorMessage =    @"手势密码错误";
     return _messageLabel;
 }
 
+// 底部按钮
+- (UIButton *)bottomButton {
+    if (!_bottomButton) {
+        CGFloat posY = SCViewHeight - BottomHeight * 1.5;
+        _bottomButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        _bottomButton.backgroundColor = [UIColor clearColor];
+        _bottomButton.frame = CGRectMake(0.0, posY, ScreenWidth, BottomHeight);
+        _bottomButton.titleLabel.font = [UIFont systemFontOfSize:14.0];
+        [_bottomButton setTitleColor:UIColorFrom16RGB(0x666666, 1.0) forState:UIControlStateNormal];
+        [_bottomButton setTitle:@"验证登录密码" forState:UIControlStateNormal];
+        [_bottomButton addTarget:self action:@selector(bottomButtonAction:) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _bottomButton;
+}
+
 #pragma mark - 对外方法
 /// 设置手势完成的回调
 - (void)gestureSetComplete:(SCGestureSetBlock)block {
@@ -165,6 +188,11 @@ NSString * const promptPasswordErrorMessage =    @"手势密码错误";
     [self popViewController];
 }
 
+- (void)bottomButtonAction:(UIButton *)sender {
+    // 验证登录密码
+}
+
+#pragma mark - 对内方法
 // 重设手势
 - (void)resetGesture {
     [self.navigationItem.rightBarButtonItem setEnabled:NO];
@@ -172,6 +200,7 @@ NSString * const promptPasswordErrorMessage =    @"手势密码错误";
     self.firstGestureCode = nil;
     self.messageLabel.text = promptDefaultMessage;
     self.messageLabel.textColor = [UIColor blackColor];
+    self.bottomButton.hidden = YES;
 }
 
 - (void)popViewController {
