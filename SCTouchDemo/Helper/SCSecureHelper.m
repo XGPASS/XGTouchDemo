@@ -104,6 +104,30 @@
 #pragma mark - 手势密码（Private）
 
 #pragma mark - TouchID（Private）
+/*
+typedef NS_ENUM(NSInteger, LAError)
+{
+    LAErrorAuthenticationFailed,     // 验证信息出错，就是说你指纹不对
+    LAErrorUserCancel               // 用户取消了验证
+    LAErrorUserFallback             // 用户点击了手动输入密码的按钮，所以被取消了
+    LAErrorSystemCancel             // 被系统取消，就是说你现在进入别的应用了，不在刚刚那个页面，所以没法验证
+    LAErrorPasscodeNotSet           // 用户没有设置TouchID
+    LAErrorTouchIDNotAvailable      // 用户设备不支持TouchID
+    LAErrorTouchIDNotEnrolled       // 用户没有设置手指指纹
+    LAErrorTouchIDLockout           // 用户错误次数太多，现在被锁住了
+    LAErrorAppCancel                // 在验证中被其他app中断
+    LAErrorInvalidContext           // 请求验证出错
+}
+ 
+ typedef NS_ENUM(NSInteger, LAPolicy)
+ {
+ LAPolicyDeviceOwnerAuthenticationWithBiometrics NS_ENUM_AVAILABLE(NA, 8_0) __WATCHOS_AVAILABLE(3.0) __TVOS_AVAILABLE(10.0) = kLAPolicyDeviceOwnerAuthenticationWithBiometrics,
+ LAPolicyDeviceOwnerAuthentication NS_ENUM_AVAILABLE(10_11, 9_0) = kLAPolicyDeviceOwnerAuthentication
+ 
+ }
+ 第一个枚举LAPolicyDeviceOwnerAuthenticationWithBiometrics就是说，用的是手指指纹去验证的；NS_ENUM_AVAILABLE(NA, 8_0)iOS8 可用
+ 第二个枚举LAPolicyDeviceOwnerAuthentication少了WithBiometrics则是使用TouchID或者密码验证,默认是错误两次指纹或者锁定后,弹出输入密码界面;NS_ENUM_AVAILABLE(10_11, 9_0)iOS 9可用
+ */
 /// 开启指纹扫描
 - (void)openTouchIDWithPolicy:(LAPolicy )policy touchIDBlock:(SCTouchIDOpenBlock)block {
     LAContext *context = [[LAContext alloc] init];

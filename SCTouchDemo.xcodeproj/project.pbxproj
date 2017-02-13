@@ -25,6 +25,10 @@
 		3728A1481E077CC5002A803F /* SCSwitchCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3728A1461E077CC5002A803F /* SCSwitchCell.xib */; };
 		3728A14E1E078746002A803F /* SCMainCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3728A14C1E078746002A803F /* SCMainCell.m */; };
 		3728A14F1E078746002A803F /* SCMainCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3728A14D1E078746002A803F /* SCMainCell.xib */; };
+		37359D111E30E10600C97F04 /* SCSearchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 37359D0F1E30E10600C97F04 /* SCSearchView.m */; };
+		37359D121E30E10600C97F04 /* SCSearchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37359D101E30E10600C97F04 /* SCSearchView.xib */; };
+		37359D161E30E16C00C97F04 /* XGTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37359D141E30E16C00C97F04 /* XGTestViewController.m */; };
+		37359D171E30E16C00C97F04 /* XGTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37359D151E30E16C00C97F04 /* XGTestViewController.xib */; };
 		3774040F1E0280A5000AEACE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3774040E1E0280A5000AEACE /* AppDelegate.m */; };
 		377404121E0280A5000AEACE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 377404111E0280A5000AEACE /* ViewController.m */; };
 		377404251E0280A5000AEACE /* SCTouchDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 377404241E0280A5000AEACE /* SCTouchDemoTests.m */; };
@@ -85,6 +89,12 @@
 		3728A14B1E078746002A803F /* SCMainCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCMainCell.h; sourceTree = "<group>"; };
 		3728A14C1E078746002A803F /* SCMainCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCMainCell.m; sourceTree = "<group>"; };
 		3728A14D1E078746002A803F /* SCMainCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SCMainCell.xib; sourceTree = "<group>"; };
+		37359D0E1E30E10600C97F04 /* SCSearchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCSearchView.h; sourceTree = "<group>"; };
+		37359D0F1E30E10600C97F04 /* SCSearchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCSearchView.m; sourceTree = "<group>"; };
+		37359D101E30E10600C97F04 /* SCSearchView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SCSearchView.xib; sourceTree = "<group>"; };
+		37359D131E30E16C00C97F04 /* XGTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGTestViewController.h; sourceTree = "<group>"; };
+		37359D141E30E16C00C97F04 /* XGTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGTestViewController.m; sourceTree = "<group>"; };
+		37359D151E30E16C00C97F04 /* XGTestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XGTestViewController.xib; sourceTree = "<group>"; };
 		377404071E0280A5000AEACE /* SCTouchDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SCTouchDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3774040D1E0280A5000AEACE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3774040E1E0280A5000AEACE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -214,6 +224,9 @@
 				3728A1411E07768A002A803F /* SCGestureController.xib */,
 				37B69D7B1E091FFA00BA19E3 /* SCGestureSetController.h */,
 				37B69D7C1E091FFA00BA19E3 /* SCGestureSetController.m */,
+				37359D131E30E16C00C97F04 /* XGTestViewController.h */,
+				37359D141E30E16C00C97F04 /* XGTestViewController.m */,
+				37359D151E30E16C00C97F04 /* XGTestViewController.xib */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -221,6 +234,9 @@
 		3728A1341E07713D002A803F /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				37359D0E1E30E10600C97F04 /* SCSearchView.h */,
+				37359D0F1E30E10600C97F04 /* SCSearchView.m */,
+				37359D101E30E10600C97F04 /* SCSearchView.xib */,
 				3728A1441E077CC5002A803F /* SCSwitchCell.h */,
 				3728A1451E077CC5002A803F /* SCSwitchCell.m */,
 				3728A1461E077CC5002A803F /* SCSwitchCell.xib */,
@@ -437,6 +453,7 @@
 				3728A1301E0770DE002A803F /* Info.plist in Resources */,
 				3728A1481E077CC5002A803F /* SCSwitchCell.xib in Resources */,
 				3728A14F1E078746002A803F /* SCMainCell.xib in Resources */,
+				37359D121E30E10600C97F04 /* SCSearchView.xib in Resources */,
 				3728A12F1E0770DE002A803F /* Main.storyboard in Resources */,
 				3728A13E1E077663002A803F /* SCTouchIDController.xib in Resources */,
 				3728A12D1E0770DE002A803F /* Assets.xcassets in Resources */,
@@ -444,6 +461,7 @@
 				3728A1431E07768A002A803F /* SCGestureController.xib in Resources */,
 				370750C71E0BABBF009088B2 /* fingerprint.png in Resources */,
 				370750C51E0B83E6009088B2 /* head_Img.JPG in Resources */,
+				37359D171E30E16C00C97F04 /* XGTestViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -516,10 +534,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37359D111E30E10600C97F04 /* SCSearchView.m in Sources */,
 				37B69D6A1E09129D00BA19E3 /* SCNormalCell.m in Sources */,
 				377404121E0280A5000AEACE /* ViewController.m in Sources */,
 				370750C31E0B786E009088B2 /* SCLoginVerifyView.m in Sources */,
 				3728A13D1E077663002A803F /* SCTouchIDController.m in Sources */,
+				37359D161E30E16C00C97F04 /* XGTestViewController.m in Sources */,
 				37B69D781E091DBE00BA19E3 /* MYZGestureShapeView.m in Sources */,
 				370750B81E0B7753009088B2 /* CALayer+shake.m in Sources */,
 				37B69D791E091DBE00BA19E3 /* MYZGestureView.m in Sources */,
