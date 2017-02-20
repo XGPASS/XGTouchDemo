@@ -704,10 +704,10 @@
 				GCC_PREFIX_HEADER = "$(SRCROOT)/SCTouchDemo/Resources/SCTouchDemo.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/SCTouchDemo/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.uama.DreamHouseServerForDLEnterprise;
+				PRODUCT_BUNDLE_IDENTIFIER = com.uama.Butler;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "f07af5af-5f08-4c8f-b80f-c5a04e41d92d";
-				PROVISIONING_PROFILE_SPECIFIER = "DreamHouseServerForDL-dev";
+				PROVISIONING_PROFILE = "95700fa6-11f1-4267-a0ec-ae667214a350";
+				PROVISIONING_PROFILE_SPECIFIER = Butler;
 			};
 			name = Debug;
 		};
@@ -721,7 +721,7 @@
 				GCC_PREFIX_HEADER = "$(SRCROOT)/SCTouchDemo/Resources/SCTouchDemo.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/SCTouchDemo/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.uama.DreamHouseServerForDLEnterprise;
+				PRODUCT_BUNDLE_IDENTIFIER = com.uama.Butler;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

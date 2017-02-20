@@ -15,8 +15,22 @@
 
 @implementation XGTestViewController
 
+- (instancetype)init {
+    self = [super init];
+    if (self) {
+        NSLog(@"init========");
+    }
+    return self;
+}
+
+- (void)loadView {
+    [super loadView];
+    NSLog(@"loadView========");
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+    NSLog(@"viewDidLoad========");
     self.navigationController.navigationBar.translucent = NO;
     self.view.backgroundColor = [UIColor whiteColor];
     [self setupUI];
