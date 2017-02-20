@@ -184,5 +184,7 @@ TouchID的弹窗的级别非常之高，高到离谱，经过验证应用程序�
 
 目前以上代码足可以满足大多数app中TouchID的使用，不足之处敬请指出；
 
-参考文章：1.http://www.jianshu.com/p/d44b7d85e0a6
+参考文章：
+1.http://www.jianshu.com/p/d44b7d85e0a6
+
 2.http://zcill.com/2016/02/29/LocalAuthentication%E6%BA%90%E7%A0%81%E5%AD%A6%E4%B9%A0/
