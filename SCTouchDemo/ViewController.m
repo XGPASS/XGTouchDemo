@@ -12,7 +12,6 @@
 #import "SCMainCell.h"
 #import "SCSecureHelper.h"
 #import "SCLoginVerifyView.h"
-#import "XGTestViewController.h"
 
 @interface ViewController ()<UITableViewDataSource, UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -100,7 +99,7 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
     SCLoginVerifyType type = SCLoginVerifyTypeTouchID;
-    UIViewController *controller = [[XGTestViewController alloc] init];
+    UIViewController *controller = nil;
     NSString *tempTitle = self.dataArray[indexPath.row];
     if ([tempTitle isEqualToString:@"手势密码"]) {
         controller = [[SCGestureController alloc] init];
