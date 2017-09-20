@@ -8,6 +8,7 @@
 
 #import "MYZGestureView.h"
 #import "MYZCircleView.h"
+#import "GCDDelay.h"
 
 /// 圆圈九宫格边界大小
 CGFloat const CircleViewMarginBorder = 5.0f;
@@ -23,6 +24,9 @@ CGFloat const LineWidth = 4.0f;
 @property (nonatomic, assign) CGPoint currentTouchPoint;
 @property (nonatomic, assign) GestureViewStatus gestureViewStatus;
 @property (nonatomic, strong) UIColor * lineColor;
+
+/// 取消绘制的GCD任务回调
+@property (nonatomic, copy) GCDTask gcdTask;
 
 @end
 
@@ -147,6 +151,7 @@ CGFloat const LineWidth = 4.0f;
 #pragma mark - Touch event
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    [GCDDelay gcdCancel:self.gcdTask];
     [self cleanViews];
     [self checkCircleViewTouch:touches];
 }
@@ -181,13 +186,12 @@ CGFloat const LineWidth = 4.0f;
                 }
             }
             
-            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.6 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            self.gcdTask = [GCDDelay gcdDelay:0.3 task:^{
                 [self cleanViews];
-            });
+            }];
         }
     }
 }
-
 
 
 - (void)cleanViews {

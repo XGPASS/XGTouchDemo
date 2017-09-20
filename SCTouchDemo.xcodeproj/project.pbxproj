@@ -38,6 +38,7 @@
 		37B69D791E091DBE00BA19E3 /* MYZGestureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 37B69D751E091DBE00BA19E3 /* MYZGestureView.m */; };
 		37B69D7D1E091FFA00BA19E3 /* SCGestureSetController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37B69D7C1E091FFA00BA19E3 /* SCGestureSetController.m */; };
 		45FB8C1D6E355C17E6206EAC /* libPods-SCTouchDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DBDDC0033CF69B8871E21E59 /* libPods-SCTouchDemo.a */; };
+		B984DE7C1F72455D00ABC963 /* GCDDelay.m in Sources */ = {isa = PBXBuildFile; fileRef = B984DE7B1F72455D00ABC963 /* GCDDelay.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +112,8 @@
 		37B69D7B1E091FFA00BA19E3 /* SCGestureSetController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCGestureSetController.h; sourceTree = "<group>"; };
 		37B69D7C1E091FFA00BA19E3 /* SCGestureSetController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCGestureSetController.m; sourceTree = "<group>"; };
 		814B532A1C66DBFAA788F671 /* Pods-SCTouchDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SCTouchDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SCTouchDemo/Pods-SCTouchDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		B984DE7A1F72455D00ABC963 /* GCDDelay.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDDelay.h; sourceTree = "<group>"; };
+		B984DE7B1F72455D00ABC963 /* GCDDelay.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDDelay.m; sourceTree = "<group>"; };
 		C6279BDEC8F7AD3E12718C4D /* Pods-SCTouchDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SCTouchDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-SCTouchDemo/Pods-SCTouchDemo.release.xcconfig"; sourceTree = "<group>"; };
 		DBDDC0033CF69B8871E21E59 /* libPods-SCTouchDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SCTouchDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -145,6 +148,8 @@
 		370750AC1E0B7753009088B2 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				B984DE7A1F72455D00ABC963 /* GCDDelay.h */,
+				B984DE7B1F72455D00ABC963 /* GCDDelay.m */,
 				370750AD1E0B7753009088B2 /* CALayer+shake.h */,
 				370750AE1E0B7753009088B2 /* CALayer+shake.m */,
 				370750AF1E0B7753009088B2 /* UIView+Ext.h */,
@@ -524,6 +529,7 @@
 				370750B81E0B7753009088B2 /* CALayer+shake.m in Sources */,
 				37B69D791E091DBE00BA19E3 /* MYZGestureView.m in Sources */,
 				37B69D7D1E091FFA00BA19E3 /* SCGestureSetController.m in Sources */,
+				B984DE7C1F72455D00ABC963 /* GCDDelay.m in Sources */,
 				3728A1311E0770DE002A803F /* main.m in Sources */,
 				3728A1471E077CC5002A803F /* SCSwitchCell.m in Sources */,
 				377760A11E0A535100D2FA5D /* SCSecureHelper.m in Sources */,
